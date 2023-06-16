@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Bread from "./components/Bread";
 import New from "./components/New"
+import UpdateBread from "./components/UpdateBread"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bread/:id" element={<Bread />} />
+          <Route path="/bread/update/:id" element={<UpdateBread />} />
           <Route path="/new" element={<New />} />
         </Routes>
       </Router>
